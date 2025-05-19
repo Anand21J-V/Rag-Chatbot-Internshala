@@ -1,10 +1,10 @@
 
-# 🧠 Rag-Chatbot-Assignment
+# Rag-Chatbot-Assignment
 A Retrieval-Augmented Generation (RAG) chatbot built using LangChain and the Groq API, designed to deliver intelligent, context-aware responses over custom datasets. This project was developed as part of an Internshala assignment.
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
 * Overview
 * Features

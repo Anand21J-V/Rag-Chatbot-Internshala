@@ -1,0 +1,9 @@
+RAG-CHATBOT-INTERNSHALA/
+├── data/
+│   └── knowledge_base.csv
+├── responses/
+│   └── chatbot_responses.xlsx
+├── chatbot.py
+├── streamlit_app.py  # Bonus
+├── requirements.txt
+└── README.md

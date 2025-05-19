@@ -45,7 +45,7 @@ def ask_question(chain, question):
     return response
 
 if __name__ == "__main__":
-    documents = load_documents("data/knowledge_base.csv")
+    documents = load_documents("data/knowledge_base.txt")
     vectorstore = create_vectorstore(documents)
     qa_chain = create_rag_chain(vectorstore)
 

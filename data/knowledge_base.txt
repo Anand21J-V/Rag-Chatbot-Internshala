@@ -1,0 +1,62 @@
+Dummy Product Data
+==================
+
+1. Product Name: Alpha Phone X1
+   SKU: APX1001
+   Expiry Date: N/A
+   Barcode: 8901234567890
+   Description: A high-end smartphone with 128GB storage and dual camera system.
+
+2. Product Name: Beta Laptop Pro
+   SKU: BLP2002
+   Expiry Date: N/A
+   Barcode: 8901234567891
+   Description: Lightweight laptop with 16GB RAM and Intel i7 processor.
+
+3. Product Name: Gamma Headphones
+   SKU: GHP3003
+   Expiry Date: N/A
+   Barcode: 8901234567892
+   Description: Wireless noise-cancelling over-ear headphones with 20hr battery life.
+
+4. Product Name: Delta Smartwatch
+   SKU: DSW4004
+   Expiry Date: N/A
+   Barcode: 8901234567893
+   Description: Fitness-focused smartwatch with heart-rate monitoring and GPS.
+
+5. Product Name: Epsilon Camera
+   SKU: ECM5005
+   Expiry Date: N/A
+   Barcode: 8901234567894
+   Description: Compact digital camera with 24MP sensor and 4K video support.
+
+6. Product Name: Zeta Blender
+   SKU: ZBL6006
+   Expiry Date: 2027-12-31
+   Barcode: 8901234567895
+   Description: Multi-speed kitchen blender with 1.5L glass jar.
+
+7. Product Name: Eta Air Purifier
+   SKU: EAP7007
+   Expiry Date: 2026-08-15
+   Barcode: 8901234567896
+   Description: HEPA-certified air purifier for rooms up to 400 sq ft.
+
+8. Product Name: Theta Smart TV
+   SKU: TST8008
+   Expiry Date: N/A
+   Barcode: 8901234567897
+   Description: 50-inch 4K Ultra HD Smart TV with streaming capabilities.
+
+9. Product Name: Iota Coffee Maker
+   SKU: ICM9009
+   Expiry Date: 2028-03-20
+   Barcode: 8901234567898
+   Description: Automatic drip coffee maker with programmable settings.
+
+10. Product Name: Kappa Vacuum Cleaner
+    SKU: KVC1010
+    Expiry Date: 2029-05-01
+    Barcode: 8901234567899
+    Description: Bagless vacuum cleaner with cyclone technology and HEPA filter.

@@ -4,3 +4,4 @@ pandas
 streamlit
 groq
 faiss-cpu
+langchain-community

@@ -6,3 +6,4 @@ groq
 faiss-cpu
 langchain-community
 sentence_transformers
+openpyxl

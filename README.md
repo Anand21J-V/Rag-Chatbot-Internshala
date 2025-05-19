@@ -4,6 +4,11 @@ A Retrieval-Augmented Generation (RAG) chatbot built using LangChain and the Gro
 
 ---
 
+# Deployed on Streamlit
+https://chatbot-rag-assignment.streamlit.app/
+
+---
+
 ## Table of Contents
 
 * Overview

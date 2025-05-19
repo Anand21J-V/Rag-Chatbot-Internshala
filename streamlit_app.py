@@ -86,17 +86,17 @@ if prompt:
 with st.sidebar:
     st.markdown("### ⚙️ Settings")
     
-    if st.button("🧹 Clear Chat"):
+    if st.button("Clear Chat"):
         st.session_state.messages = []
         st.success("Chat history cleared!")
 
-    if st.button("📄 View Saved Responses"):
+    if st.button("View Saved Responses"):
         try:
             df = pd.read_excel(excel_file)
-            st.markdown("### 💾 Saved Responses")
+            st.markdown("### Saved Responses")
             st.dataframe(df, use_container_width=True)
         except Exception as e:
             st.error(f"Error loading saved responses: {e}")
 
     st.markdown("---")
-    st.markdown("Built by **Anand Kumar Vishwakarma** using 💡 LangChain + Streamlit")
+    st.markdown("Built by **Anand Kumar Vishwakarma**")

@@ -27,6 +27,7 @@ class SentenceTransformerEmbeddings(Embeddings):
     def embed_query(self, text):
         return self.model.encode([text], show_progress_bar=False)[0].tolist()
 
+# Class For RagChatbot
 class RAGChatbot:
     def __init__(self, groq_api_key, data_path):
         self.groq_client = Groq(api_key=groq_api_key)
@@ -36,6 +37,7 @@ class RAGChatbot:
         self.responses = []  # to store chat logs
         self._load_data_and_prepare()
 
+# Function for loading and preparing the data
     def _load_data_and_prepare(self):
         with open(self.data_path, 'r', encoding='utf-8') as f:
             text = f.read()
@@ -51,6 +53,7 @@ class RAGChatbot:
 
         self.vectorstore = FAISS.from_documents(split_docs, self.embeddings)
 
+# loading the model
     def _groq_generate(self, prompt):
         response = self.groq_client.chat.completions.create(
             model="llama-3.3-70b-versatile",
@@ -61,6 +64,7 @@ class RAGChatbot:
         )
         return response.choices[0].message.content
 
+# Creating the Chain for backend
     def answer_question(self, query):
         docs = self.vectorstore.similarity_search(query, k=5)
         context = "\n\n".join([doc.page_content for doc in docs])
@@ -71,6 +75,7 @@ class RAGChatbot:
         self.responses.append({"Question": query, "Answer": answer})
         return answer
 
+# Function for Saving the response in the excel file
     def save_responses_to_excel(self, filename="chatbot_responses.xlsx"):
         if self.responses:
             df = pd.DataFrame(self.responses)

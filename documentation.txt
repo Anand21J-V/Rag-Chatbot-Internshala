@@ -1,0 +1,132 @@
+===========================
+RAG Chatbot Internshala Project Documentation
+===========================
+
+1. Project Title
+----------------
+RAG Chatbot using LangChain and Groq API
+
+2. Submitted By
+---------------
+Name: Anand Vishwakarma
+Email: anandvishwakarma21j@gmail.com
+Contact: +91 7011472391
+
+3. Project Repository & Streamlit Link
+--------------------------------------
+GitHub: https://github.com/Anand21J-V/Rag-Chatbot-Internshala
+Streamlit: https://chatbot-rag-assignment.streamlit.app/
+
+4. Objective
+------------
+To develop a chatbot application that utilizes Retrieval-Augmented Generation (RAG) for intelligent query responses using domain-specific data. The project uses LangChain for orchestration and Groq API as the LLM backend.
+
+5. Key Technologies Used
+------------------------
+- Python: Core programming language
+- Streamlit: UI for user interaction
+- LangChain: Framework for chaining and retrieval
+- Groq API: High-speed LLM inference
+- FAISS: Vector similarity search
+- dotenv: Environment variable handling
+- PyMuPDF: PDF parsing (if required)
+- Pandas: Data processing
+- Pickle: Model/vector store caching
+- OS/Glob: File utilities
+
+6. Functional Description
+-------------------------
+Workflow:
+- User enters a query via UI
+- FAISS retrieves relevant document chunks
+- Prompt is dynamically created
+- Groq API is called to generate response
+- Final response is shown in Streamlit app
+
+RAG (Retrieval-Augmented Generation):
+- Enhances accuracy by grounding LLM responses in real data
+- Combines search with generation in one pipeline
+
+7. Features
+-----------
+- Accepts and processes user documents
+- Fast document search with FAISS
+- Dynamic prompt templating
+- Clean and interactive Streamlit UI
+- Easily adaptable and extendable
+- Secure API key handling via .env
+
+8. Project Structure
+--------------------
+Rag-Chatbot-Internshala/
+├── .devcontainer/         --> VSCode dev container setup
+├── Project_Structure/     --> Diagrams and flowcharts
+├── Setup/                 --> Initial setup and config
+├── data/                  --> Upload directory for knowledge base
+├── template/              --> Prompt templates
+├── chatbot.py             --> Backend logic
+├── streamlit_app.py       --> Frontend logic (Streamlit app)
+├── requirements.txt       --> Dependency list
+├── LICENSE                --> MIT License
+└── README.md              --> GitHub README
+
+9. Installation Instructions
+----------------------------
+Step 1: Clone Repository
+------------------------
+git clone https://github.com/Anand21J-V/Rag-Chatbot-Internshala.git
+cd Rag-Chatbot-Internshala
+
+Step 2: Create Virtual Environment
+----------------------------------
+python -m venv venv
+source venv/bin/activate   (Windows: venv\Scripts\activate)
+
+Step 3: Install Dependencies
+----------------------------
+pip install -r requirements.txt
+
+Step 4: Add Environment Variables
+---------------------------------
+Create a file named .env and insert your Groq API key:
+
+GROQ_API_KEY=your_groq_api_key_here
+
+10. Run the Application
+-----------------------
+streamlit run streamlit_app.py
+
+This will launch the chatbot in your default browser.
+
+11. Important Files
+-------------------
+- chatbot.py: Logic for document retrieval and LLM interaction
+- streamlit_app.py: Streamlit-based frontend
+- template/: Prompt templates used to structure LLM input
+- data/: Custom document folder
+- Setup/: Initial configuration
+- .env: Environment variable storage
+- requirements.txt: Python package list
+
+12. How to Use with Your Own Data
+---------------------------------
+1. Place your PDF or TXT files into the data/ folder
+2. Adjust any preprocessing logic in chatbot.py (if needed)
+3. Modify prompt templates in template/ folder
+4. Update .env with your Groq API key
+
+13. Future Enhancements
+-----------------------
+- Support for additional LLM APIs (OpenAI, Cohere, etc.)
+- Store and retrieve conversation history
+- Speech-to-text and text-to-speech integration
+- User login and history tracking
+- Automatic chunking of large documents
+
+14. License
+-----------
+MIT License - Free to use with attribution
+
+15. Conclusion
+--------------
+This project implements a modern chatbot solution based on RAG using LangChain and Groq API. It is modular, fast, and extensible, making it suitable for domain-specific question answering applications.

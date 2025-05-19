@@ -11,6 +11,7 @@ list_of_files = [
     "chatbot.py",
     "streamlit_app.py",
     "requirements.txt",
+    "setup.py",
     "README.md",
     ".env"
 ]

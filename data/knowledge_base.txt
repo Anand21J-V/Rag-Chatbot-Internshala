@@ -1,4 +1,4 @@
-Dummy Product Data
+Product Data
 ==================
 
 1. Product Name: Alpha Phone X1

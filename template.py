@@ -7,7 +7,6 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 # Define the project files and folders to create
 list_of_files = [
     "data/knowledge_base.csv",
-    "responses/chatbot_responses.xlsx",
     "chatbot.py",
     "streamlit_app.py",
     "requirements.txt",
